@@ -4,9 +4,9 @@
 
 The first ever web page that I coded after MY own design, made in the popular web designing tool `Figma`.
 
-## 🖼️ [Live Preview Link](# "Not available")
+## 🖼️ [Live Preview Link](https://zascuofficial-cta.netlify.app/ "The preview link")
 
-![Live Preview Image](# "Not available")
+![Preview Image](assets/img/preview-image.png "Preview of the website")
 
 ## 💻 Technologies Used
 
