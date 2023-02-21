@@ -5,3 +5,142 @@
   --light-green: #CAD2C5;
   --dark-green: #4E6653;
 }
+
+/* Global Styles
+========================= */
+
+body {
+  display: grid;
+  place-items: center;
+  font-family: 'Roboto', sans-serif;
+  background:
+    linear-gradient(
+      180deg,
+      var(--dark-green) 0%,
+      var(--light-green) 100%
+    );
+}
+
+/* Typography
+========================= */
+
+.cta-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cta-body {
+  font-size: 1.25rem;
+}
+
+.cta-btn {
+  font-size: 1.125rem;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+
+/* Layout
+========================= */
+
+.container {
+  width: 80%;
+  max-width: 70em;
+  display: flex;
+  flex-direction: column;
+}
+
+.cta-image {
+  height: 18.562em;
+  border-radius: 15px;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+}
+
+.cta-details {
+  margin-top: 4em;
+  margin-inline: auto;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.cta-title {
+  margin-bottom: 2.25rem;
+  color: var(--dark-gray);
+}
+
+.cta-body {
+  margin-bottom: 4rem;
+  color: var(--dark-blue);
+}
+
+.cta-btn {
+  padding: 1rem 2rem;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  border-radius: 30px;
+  transition: ease 120ms;
+}
+
+.cta-btn:hover {
+  background-color: var(--white);
+  color: var(--dark-blue);
+}
+
+.cta-btn:active {
+  background-color: var(--dark-green);
+  color: var(--white);
+}
+
+@media (min-width: 45em) {
+  .cta-image {
+    height: 30em;
+  }
+
+  .cta-details {
+    width: 70%;
+    padding: 4em;
+    margin-top: -8em;
+    text-align: left;
+    background-color: var(--dark-blue);
+    box-shadow: 0 -15px 15px rgba(0, 0, 0, 0.15);
+  }
+
+  .cta-title, .cta-body {
+    color: var(--white);
+  }
+
+  .cta-btn {
+    background-color: var(--white);
+    color: var(--dark-blue);
+  }
+
+  .cta-btn:hover {
+    background-color: var(--dark-green);
+    color: var(--white);
+  }
+
+  .cta-btn:active {
+    background-color: var(--white);
+    color: var(--dark-green);
+  }
+}
+
+@media (min-width: 90em) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .cta-image {
+    width: 50%;
+    height: auto;
+  }
+
+  .cta-details {
+    margin-top: 0;
+    margin-left: -8em;
+    box-shadow: -15px 0 15px rgba(0, 0, 0, 0.15);
+  }
+}
