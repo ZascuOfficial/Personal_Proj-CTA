@@ -21,6 +21,11 @@ body {
     );
 }
 
+*::selection {
+  background-color: var(--white);
+  color: var(--dark-green);
+}
+
 /* Typography
 ========================= */
 
